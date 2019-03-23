@@ -1,5 +1,6 @@
 # MColorsC
-A simple Material Color picker desktop application. Inspired by Google [material design colors](https://www.materialpalette.com/colors).
+A simple Material Color picker desktop application. Inspired by Google [material design colors](https://www.materialpalette.com/colors).<br>
+Made with [Electron](https://electronjs.org/).
 
 ## Installation
 

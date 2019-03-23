@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Material Colors</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/index.css">
+    </head>
+    <body>
+        <header>
+            <div class="he-left">
+                <img src="../assets/images/colors.svg">
+                <p>Material Colors</p>
+            </div>
+            <div class="he-middle">
+                <ul class="tabs">
+                    <li id="tab_main" class="ta-active" onclick="setOnClickColorPicker(this,'main')">Colors</li>
+                    
+                </ul>
+            </div>
+            <div class="he-right">
+                <ul class="mmc">
+                    <li id="minimize"><img src="../assets/images/minimize.svg"></li>
+                    <li><img src="../assets/images/maximize.svg"></li>
+                    <li id="close_to_tray"><img src="../assets/images/close.svg"></li>
+                </ul>
+            </div>
+        </header>
+        <div class="main-container" style="display:blck;visibility:visible">
+            <div class="ma-toolbar">
+                <p id="ma-to-vi-p">Column view</p>
+                <img style="opacity:1" src="../assets/images/view1.svg" id="btn_col_view" onclick="changeView(this, 'col')">
+                <img style="opacity:0.3" src="../assets/images/view2.svg" id="btn_grid_view" onclick="changeView(this, 'grid')">
+            </div>
+            <div class="container">
+            </div>
+            <div class="con_grid">
+                <div class="grid-view">
+            
+                </div>
+                <div id="grid_color_preview">
+                    
+                </div>
+            </div>
+            <span id="copied"></span>
+        </div>
+        <div class="con-colorPicker" style="display:none;visibility:hidden">
+            <div class="toolBar">
+                <ul>
+                    <li><img onclick="openColorPicker()" src="../assets/images/eyedropper.png"></li>
+                </ul>
+            </div>
+            <div class="colorPreview">
+                
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
